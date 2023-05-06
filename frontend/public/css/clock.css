@@ -1,0 +1,55 @@
+.countdown_clock_container {
+  max-width: 480px;
+  background-color: white;
+  font-family: -apple-system, 
+    BlinkMacSystemFont, 
+    "Segoe UI", 
+    Roboto, 
+    Oxygen-Sans, 
+    Ubuntu, 
+    Cantarell, 
+    "Helvetica Neue", 
+    sans-serif;
+    color: #333;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 0.7em;
+}
+
+.countdown_clock_container li {
+  display: inline-block;
+  font-size: 1.7em;
+  list-style-type: none;
+  text-transform: uppercase;
+}
+
+.countdown_clock_container .entry-content ul li:not([class])::before, .entry-summary ul li:not([class])::before, .wc-product-collapse #description ul li:not([class])::before {
+	content: none !important;
+  padding: 0.5em !important;
+}
+
+.countdown_clock_container li span {
+  display: block;
+  font-size: 1.7em;
+}
+
+.countdown_clock_container span {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.countdown_clock_container ul {
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+@media all and (max-width: 768px) {
+  .countdown_clock_container li {
+    font-size: calc(1.7em * .75);
+  }
+  
+  .countdown_clock_container li span {
+    font-size: calc(1.7em * .75);
+  }
+}
